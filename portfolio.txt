@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; 
+            background-image: linear-gradient(to bottom, #f0f8ff, #e6e6fa); /* Light gradient background */
+        }
+
+        header {
+            background-color: #4a90e2; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #003d7d; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4em;
+            font-weight: bold;
+            text-shadow: 2px 2px #003d7d;
+        }
+
+        header p {
+            margin: 10px 0 20px;
+            font-size: 1.1em;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d0d0d0; 
+        }
+
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #about img {
+            width: 150px; 
+            border-radius: 50%;
+            border: 3px solid #4a90e2;
+            margin-right: 30px;
+        }
+
+        #about h3 {
+            margin-top: 0;
+        }
+
+        #about ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #about ul h4 {
+            margin: 10px 0 5px;
+        }
+
+        #about ul li {
+            margin-bottom: 10px;
+        }
+
+        .skills-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .skill-container {
+            margin: 20px 0;
+        }
+
+        .skill-bar {
+            position: relative;
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 25px;
+            margin: 10px auto;
+            height: 25px;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 25px;
+            color: #fff;
+            background-color: #4a90e2;
+        }
+
+        .html { width: 90%; }
+        .css { width: 85%; }
+        .javascript { width: 80%; }
+        .python { width: 75%; }
+
+        .project {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project-bar {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .project img {
+            width: 40%; 
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .project-content {
+            width: 60%;
+        }
+
+        .project-number {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #003d7d; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a90e2;
+            color: #fff;
+            border-top: 5px solid #003d7d;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CH.Vinutna</h1>
+        <p>Hello! I am a passionate web developer with a background in computer science and engineering. I enjoy creating beautiful and functional websites.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.j4orePCXFMcYtlnNxt730AHaHa&pid=Api&P=0&h=180" alt="Profile Picture">
+        <div>
+            <h3>CH.vinutna</h3>
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <h4>10th</h4>
+                    UNIVERSAL,ANDHRA PRADESH<br>2019-2020
+                </li>
+                <li>
+                    <h4>Intermediate</h4>
+                    DREAMS, Andhra Pradesh <br> 2020 - 2022
+                </li>
+                <li>
+                    <h4>B Tech</h4>
+                    Vignan's University, Guntur <br> 2022 - 2026
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill html">90%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill css">85%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill javascript">80%</div>
+            </div>
+        </div>
+        <div class="skill-container">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-bar-fill python">75%</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.JLvhwJDZizRuJkUtZSuvKQHaEr&pid=Api&P=0&h=180" alt="Online Train Booking System">
+                <div class="project-content">
+                    <span class="project-number">Project 1:</span>
+                    <h3>Responsive Portfolio Website</h3>
+                    <p>A personal portfolio website built with HTML, CSS, and JavaScript, featuring a responsive design that adapts to different screen sizes. The website showcases your projects, skills, and contact information, with smooth navigation and animated elements. The JavaScript is used to create interactive components like a dynamic project gallery and a contact form with validation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://www.bytewebster.com/img/javascript-quiz-image-bytewebster3.png" alt="Mobile App Projects">
+                <div class="project-content">
+                    <span class="project-number">Project 2:</span>
+                    <h3>Interactive Quiz App</h3>
+                    <p>An interactive quiz application that tests users' knowledge on various topics. Built with HTML for structure, CSS for styling, and JavaScript for logic and interactivity, the app features multiple-choice questions, a timer, and instant feedback. JavaScript dynamically updates the quiz content and calculates the user's score, while CSS animations enhance the user experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-bar">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.pt6x1bhoNTRNeY8_941XsQHaFs&pid=Api&P=0&h=180" alt="Big Mart Sales Prediction">
+                <div class="project-content">
+                    <span class="project-number">Project 3:</span>
+                    <h3>Weather Dashboard</h3>
+                    <p>A weather dashboard application that displays real-time weather information for any city entered by the user. Using HTML for layout, CSS for styling, and JavaScript for fetching data from a weather API, this app provides users with current weather conditions, a five-day forecast, and weather icons. The interface is designed to be clean and intuitive, with responsive design principles to ensure usability on any device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="https://github.com/Shaik-Haseena">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/Shaik-Haseena">LinkedIn</a></li>
+            </ul>
+            <p>&copy; 2024 Shaik Haseena. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
